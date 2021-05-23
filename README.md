@@ -1,9 +1,11 @@
 # for support join here [TorrentLeech-Gdrive](https://telegram.dog/GBotStore)
 # working example group [Leech Here](https://telegram.dog/GBotStore)
 
-# Telegram Torrent Leecher 🔥🤖
+# 🤖Telegram Torrent and Direct links Leecher 🔥
 
-A Telegram Torrent (and youtube-dl) Leecher based on [Pyrogram](https://github.com/pyrogram/pyrogram)
+### Dont Abuse The Repo ... this is intented to run in Small Places or For Short time 😐
+
+## A Telegram Torrent , Direct Links (and youtube-dl) Leecher based on [Pyrogram](https://github.com/pyrogram/pyrogram)
 
 # Benefits :-
     ✓ Google Drive link cloning using gclone.(wip)
@@ -22,7 +24,6 @@ A Telegram Torrent (and youtube-dl) Leecher based on [Pyrogram](https://github.c
     ✓ Added support for youtube playlist 😐
     ✓ Renaming of Telegram files support added. 😐
     ✓ Changing rclone destination config on fly (By using `/rlcone` in private mode)
-    ✓
     
 # TO-DO
 -   ~Gdrive file clonning using Gclone~ `DONE ✓`
@@ -30,98 +31,17 @@ A Telegram Torrent (and youtube-dl) Leecher based on [Pyrogram](https://github.c
 -   [ ] Password support while Unarchiving the files.
 -   [ ] Selection of required files during leeching the big files using aria(/leech command)
 
-## installing...
+# Deploying
+---
+| How to deploy and Install ?!                                                                                                                 | Name                        | Type          | Lowest-Price Plan                     | Deploy                                                  |
+| --------------------------------------------------------------------------------------------------------------- | -----------------           | ------------- | ------------------------------------- | ------------------------------------------------------- |
+| [🖥VPS](https://www.google.com/search?q=vps)                                                                  | Virtual Private Server      | VPS           | google it                             | [see guide](vps-deployment.md)                               |
+| ![Heroku](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)                                                            | Heroku                      | Container     | Free, 1 CPU, 512 MB RAM,375gb Storage               | [see guide](guides/heroku-deployment.md)                |
 
-### The Easy Way
+---
 
-#### STEPS (I did this to avoid the use of same button multiple times)
 
-a)You have to fork this repo at first(Don't know how to🤔, Then google it😐)
 
-b)Find `app.jso`. 🧐
-
-c)Tap on that. 😬
-
-d)Tap to edit and just add `n` at last of name (Don't touch code🤦). ✍️
-
-e)It should look like `app.json`. 🎉
-
-f)Then tap 👇👇
-
- Heroku is not supported now 😕 #Dead
-
-Better buy a vps 😐 and follow [this](https://github.com/gautamajay52/TorrentLeech-Gdrive#process-to-run-this-bot-on-vps)
-
-## Process to run this BOT on VPS
-
-- Clone this repo:
-```
-git clone https://github.com/gautamajay52/TorrentLeech-Gdrive torrentleech-gdrive
-cd torrentleech-gdrive
-```
-
-- Install requirements
-For Debian based distros
-```
-sudo snap install docker
-```
-Install Docker by following the [official docker docs](https://docs.docker.com/engine/install/debian/)
-
-## Setting up config file
-```
-cp sample_config.env config.env
-```
-After this step you will see a new file named ```config.env``` in root directory.
-
-Fill those compulsory variables.
-
-If you need more explanation about any variable then read [app.jso](https://github.com/gautamajay52/TorrentLeech-Gdrive/blob/master/app.jso)
-
-##### Set Rclone
-
-1. Set Rclone locally by following the official repo : https://rclone.org/docs/
-2. Get your `rclone.conf` file.
-will look like this
-```
-[NAME]
-type = 
-scope =
-token =
-client_id = 
-client_secret = 
-
-```
-2 Copy `rclone.conf` file in the root directory (Where `Dockerfile` exists).
-
-3 Your config can contains multiple drive entries.(Default: First one and change using `/rclone` command)
-
-## Deploying
-
-- Start docker daemon (skip if already running):
-```
-sudo dockerd
-```
-- Build Docker image:
-```
-sudo docker build . -t torrentleech-gdrive
-```
-- Run the image:
-```
-sudo docker run torrentleech-gdrive
-```
-Follow this [Video Tutorial](https://youtu.be/J3tMbngA9DE)
-### The Legacy Way
-Simply clone the repository and run the main file:
-
-```sh
-git clone https://github.com/gautamajay52/TorrentLeech-Gdrive
-cd TorrentLeech-Gdrive
-python3 -m venv venv
-. ./venv/bin/activate
-pip install -r requirements.txt
-# <Create config.py appropriately>
-python3 -m tobrot
-```
 ### Variable Explanations
 
 ##### Mandatory Variables
@@ -138,69 +58,6 @@ python3 -m tobrot
 
 ## FAQ
 
-##### Optional Configuration Variables
-
-* `DOWNLOAD_LOCATION`
-
-* `MAX_FILE_SIZE`
-
-* `TG_MAX_FILE_SIZE`
-
-* `FREE_USER_MAX_FILE_SIZE`
-
-* `MAX_TG_SPLIT_FILE_SIZE`
-
-* `CHUNK_SIZE`
-
-* `MAX_MESSAGE_LENGTH`
-
-* `PROCESS_MAX_TIMEOUT`
-
-* `ARIA_TWO_STARTED_PORT`
-
-* `EDIT_SLEEP_TIME_OUT`
-
-* `MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START`
-
-* `FINISHED_PROGRESS_STR`
-
-* `UN_FINISHED_PROGRESS_STR`
-
-* `TG_OFFENSIVE_API`
-
-* `CUSTOM_FILE_NAME`
-
-* `LEECH_COMMAND`
-
-* `YTDL_COMMAND`
-
-* `GYTDL_COMMAND`
-
-* `GLEECH_COMMAND`
-
-* `TELEGRAM_LEECH_COMMAND`
-
-* `TELEGRAM_LEECH_UNZIP_COMMAND`
-
-* `PYTDL_COMMAND`
-
-* `CLONE_COMMAND_G`
-
-* `UPLOAD_COMMAND`
-
-* `RENEWME_COMMAND`
-
-* `SAVE_THUMBNAIL`
-
-* `CLEAR_THUMBNAIL`
-
-* `GET_SIZE_G`
-
-* `UPLOAD_AS_DOC`: Takes two option True or False. If True file will be uploaded as document. This is for people who wants video files as document instead of streamable.
-
-* `INDEX_LINK`: (Without `/` at last of the link, otherwise u will get error) During creating index, plz fill `Default Root ID` with the id of your `DESTINATION_FOLDER` after creating. Otherwise index will not work properly.
-
-* `DESTINATION_FOLDER`: Name of your folder in ur respective drive where you want to upload the files using the bot.
 
 ## Available Commands
 
@@ -258,7 +115,7 @@ the file will be uploaded as `new.txt`.
 
 ## How to Use?
 
-* send any one of the available command, as a reply to a valid link/magnet/torrent. 👊
+### send any one of the available command, as a reply to a valid link/magnet/torrent. 👊
 
 
 ## Credits, and Thanks to
