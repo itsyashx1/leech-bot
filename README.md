@@ -42,21 +42,24 @@
 
 
 
-### Variable Explanations
+## Variable Explanations
 
-##### Mandatory Variables
+---
+### 🔴Required Environmental Variables... MUST BE GIVEN....
 
-* `TG_BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
-
-* `APP_ID`
-* `API_HASH`: Get these two values from [my.telegram.org/apps](https://my.telegram.org/apps).
-  * N.B.: if Telegram is blocked by your ISP, try our [Telegram bot](https://telegram.dog/UseTGXBot) to get the IDs.
-
-* `AUTH_CHANNEL`: Create a Super Group in Telegram, add `@GoogleIMGBot` to the group, and send /id in the chat, to get this value.
-
-* `OWNER_ID`: ID of the bot owner, He/she can be abled to access bot in bot only mode too(private mode).
-
-## FAQ
+| Variable | Value | Example | Required | Description |
+| :---: | :---: | :---: | :---: | :---: |
+| HEROKU_EMAIL | Heroku email | abc@abc.com | True | Just Give the email you used for Heroku Account|
+| HEROKU_API_KEY | Heroku API key | xxxxxxx-xxxx-xxxx-xxxx-xxxxxx | True | Get it from [Heroku](https://dashboard.heroku.com/account/applications/authorizations/new) |
+| HEROKU_APP_NAME | Heroku app name | Name Must be unique | True | Heroku app name that needs to be Updated or Created (Should be in lowercase) |
+| TG_BOT_TOKEN | Telegram Bot Token | your telegram bot api key/token | True | Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the  API token. |
+| APP_ID | Telegram APP_ID | Your TG account's APP_ID | True | Get this value from [TELEGRAM](https://my.telegram.org/apps). |
+| API_HASH | Telegram API_HASH | Your TG account's API_HASH | True | Get this value from [TELEGRAM](https://my.telegram.org/apps). |
+| OWNER_ID | TG account's ID | Your TG account's ID | True | ID of the bot owner, He/she can be abled to access bot in bot only mode too(private mode). |
+| AUTH_CHANNELS | Authorized Chats | Your Group Chats ID | True | Create a Super Group in Telegram, add `@missrose_bot` to the group, and send /id in the chat, to get this value. |
+---
+### [For A List Of Non-Mandatory Variables..Click Here..](other-vars.md)
+---
 
 
 ## Available Commands
