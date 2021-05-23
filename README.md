@@ -36,7 +36,7 @@
 | How to deploy and Install ?!                                                                                                                 | Name                        | Type          | Lowest-Price Plan                     | Deploy                                                  |
 | --------------------------------------------------------------------------------------------------------------- | -----------------           | ------------- | ------------------------------------- | ------------------------------------------------------- |
 | [🖥VPS](https://www.google.com/search?q=vps)                                                                  | Virtual Private Server      | VPS           | google it                             | [see guide](vps-deployment.md)                               |
-| ![Heroku](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)                                                            | Heroku                      | Container     | Free, 1 CPU, 512 MB RAM,375gb Storage               | [see guide](guides/heroku-deployment.md)                |
+| ![Heroku](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)                                                            | Heroku                      | Container     | Free, 1 CPU, 512 MB RAM,375gb Storage               | [see guide](heroku/heroku-deployment.md)                |
 
 ---
 
